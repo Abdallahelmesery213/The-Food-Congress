@@ -25,26 +25,31 @@ ul{
 /* start header */
 header{
     position: relative;
-    /* margin-bottom: 35px; */
-    padding-bottom: 35px;
+    margin-bottom: 20px;
+    /* padding-bottom: 35px; */
     /* border-bottom: 5px solid #29b373; */
 }
+header .left-part img{
+    width: 100%;
+    min-height: 105px;
+    cursor: pointer;
+}
 header .nav1{
-    margin-top: 25px;
-    margin-bottom: 25px;
     background-color: #29b373;
-    padding: 25px 0;
+    padding: 0 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
     width: 74%;
+    min-height: 105px;
 }
 
 /* header .nav1 ul li:first-of-type{
     border-top: 4px solid #29b373;
 } */
 header .nav1 ul li{
-    font-size: 14px;
+    font-size: 17px;
     margin-right: 25px;
     cursor: pointer;
     padding-top: 5px;
@@ -146,6 +151,7 @@ header .nav2 ul li{
 }
 .datamatix-section p{
     font-size: 21px;
+    line-height: 32px;
 }
 .datamatix-section a{
     color: #29b373 !important;
@@ -334,12 +340,17 @@ footer form .btn{
     }
 }
 
+@media only screen and (max-width: 1199px) {
+    .banner .banner-text h3{
+        font-size: 38px;
+    }
+}
 @media only screen and (max-width: 1059px) {
-    header .nav1{
+    /* header .nav1{
         margin-top: 0;
         margin-bottom: 0;
         padding: 25px;
-    }
+    } */
     header .nav1 ul li {
         font-size: 12px;
     }
@@ -351,6 +362,12 @@ footer form .btn{
 }
 @media only screen and (max-width: 1109px) {
     .counter-top .btns {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1086px) {
+    header .nav1{
+        position: relative;
         width: 100%;
     }
 }
@@ -412,6 +429,8 @@ footer form .btn{
     header .left-part img{
         margin: auto;
         display: flex;
+        width: auto;
+        height: auto;
     }
     header .nav2 ul {
         margin-left: 0;
@@ -431,6 +450,7 @@ footer form .btn{
     }
     .datamatix-section p {
         font-size: 14px;
+        line-height: 25px;
     }
     .banner_title{
         font-size: 22px;
@@ -565,6 +585,10 @@ footer form .btn{
         margin-left: 5px;
         font-size: 13px;
     }
+    header .left-part img{
+        width: auto;
+        height: auto;
+    }
 }
 @media only screen and (max-width: 505px) {
     header .nav1 .langs {
@@ -591,7 +615,9 @@ footer form .btn{
     .banner .banner-text h3 {
         margin-top: 40%;
     }
-    
+    .datamatix-section p {
+        line-height: 22px;
+    }
 }
 @media only screen and (max-width: 375px) {
     /* header .nav1{
@@ -610,8 +636,15 @@ footer form .btn{
         padding: 5px 10px;
     }
     .datamatix-section h3 {
-        font-size: 20px;
-        margin-bottom: 12px;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .datamatix-section p , .datamatix-section a {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .datamatix-section{
+        margin-bottom: 25px;
     }
 }
 
